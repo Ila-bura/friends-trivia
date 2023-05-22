@@ -39,3 +39,42 @@ h2 {
     font-size: 28px;
     font-weight: 600;
 }
+
+/* --------- Buttons */
+
+.btn {
+    background: #AEC8ED;
+    font-size: 18px;
+    font-weight: 500;
+    width: 100%;
+    border: 1px solid;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #FFFF;
+    color: #AEC8ED;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+
+.btn-next {
+    background: #F3C5DF;
+    color: white;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+
+}
+
+.btn-next:hover {
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
