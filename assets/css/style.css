@@ -9,3 +9,33 @@
     background-size: cover;
 
 }
+
+/* --------- Main heading */
+
+.game-title {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    color: #F3C5DF;
+    font-weight: 600;
+    padding-top: 50px;
+
+
+}
+
+/* --------- Quiz area layout */
+
+.quiz-area {
+    width: 80%;
+    max-width: 500px;
+    margin: 60px auto 0;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: white;
+
+}
+
+h2 {
+    font-family: 'Darumadrop One', cursive;
+    font-size: 28px;
+    font-weight: 600;
+}
