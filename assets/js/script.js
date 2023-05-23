@@ -138,9 +138,25 @@ function displayQuestion() {
     });
 }
 
+// Function to add the button clicked by the user and check if answer is correct
+
+function pickAnswer(e) {
+    const chosenButton = e.target;
+    const isCorrect = chosenButton.dataset.correct === "true";
+    if (isCorrect) {
+        chosenButton.classList.add("correct");
+    }
+
+    else {
+        chosenButton.classList.add("incorrect");
+    }
+}
+
+
+
 beginQuiz();
 
-// Function to check if answer is correct
+
 
 // Function to clear the area and reset previous answers before displaying the next question
 
