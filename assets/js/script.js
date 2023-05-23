@@ -1,6 +1,6 @@
 // Array with ten sets of questions with their corresponding possible options
 
-let allQuestions = [
+const questions = [
     {
         question: 'How many sisters does Joey have?',
         answers: [
@@ -97,13 +97,13 @@ let allQuestions = [
 ];
 
 // Variable for the question
-let question = document.GetElementById("question");
+const questionElement = document.getElementById("question");
 
 // Variable for the answer
-let answerButton = document.GetElementById("answer-buttons");
+const answerButtons = document.getElementById("answer-buttons");
 
 // Variable for the next button
-let nextButton = document.GetElementById("btn-next");
+const nextButton = document.getElementById("btn-next");
 
 // Variable to store the score index and initial score
 let currentQuestionIndex = 0;
@@ -113,25 +113,27 @@ let score = 0;
 function beginQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    nextButton.innerHTML = "Next one";
+    nextButton.textContent = "Next one";
     displayQuestion();
 }
 
 // Function to display the questions with corresponding number and update the text. Create and display a button and update the text with the possible answers.
 
 function displayQuestion() {
-    let currentQuestion = question[currentQuestionIndex];
+    let currentQuestion = questions[currentQuestionIndex];
     let questionNumber = currentQuestionIndex + 1;
-    question.innerHTML = questionNumber + currentQuestion.question;
+    questionElement.innerHTML = questionNumber + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
-        answerButton.appendChild(button);
+        answerButtons.appendChild(button);
     });
 }
+
 beginQuiz();
+
 // Function to check if answer is correct
 
 // Function to clear the area
