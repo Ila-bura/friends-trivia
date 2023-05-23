@@ -109,18 +109,30 @@ let nextButton = document.GetElementById("btn-next");
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Function to start the quiz with question index and initial score set to 0
+// Function to start the quiz with question index and initial score set to 0 then call the function to show the question
 function beginQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     nextButton.innerHTML = "Next one";
-    showQuestion();
+    displayQuestion();
 }
 
+// Function to display the questions with corresponding number and update the text. Create and display a button and update the text with the possible answers.
 
-// Function to display the questions
+function displayQuestion() {
+    let currentQuestion = question[currentQuestionIndex];
+    let questionNumber = currentQuestionIndex + 1;
+    question.innerHTML = questionNumber + currentQuestion.question;
 
-// Function to check if answer is correct 
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerButton.appendChild(button);
+    });
+}
+beginQuiz();
+// Function to check if answer is correct
 
 // Function to clear the area
 
