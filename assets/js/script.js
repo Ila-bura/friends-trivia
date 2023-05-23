@@ -110,6 +110,12 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 // Function to start the quiz with question index and initial score set to 0
+function beginQuiz() {
+    currentQuestionIndex = 0;
+    score = 0;
+    nextButton.innerHTML = "Next one";
+    showQuestion();
+}
 
 
 // Function to display the questions
