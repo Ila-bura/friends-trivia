@@ -117,7 +117,7 @@ function beginQuiz() {
     displayQuestion();
 }
 
-// Function to display the question with corresponding index number and update the text. Create and display a button and update the text with the possible answers to the question set.
+// Function to display the question with corresponding index number and update the text. Create and display a button and update the text with the possible answers to the question set. Create a click event for the selection of the answer. 
 
 function displayQuestion() {
     clearArea();
@@ -130,6 +130,11 @@ function displayQuestion() {
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerButtons.appendChild(button);
+
+        if (answer.correct) {
+            button.dataset.correct = answer.correct;
+        }
+        button.addEventListener("click", pickAnswer);
     });
 }
 
@@ -137,7 +142,7 @@ beginQuiz();
 
 // Function to check if answer is correct
 
-// Function to clear the area and reset previous question and answer before displaying the next question
+// Function to clear the area and reset previous answers before displaying the next question
 
 function clearArea() {
 
