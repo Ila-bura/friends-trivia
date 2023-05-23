@@ -97,13 +97,13 @@ let allQuestions = [
 ];
 
 // Variable for the question
-
+let question = document.GetElementById("question");
 
 // Variable for the answer
-
+let answerButton = document.GetElementById("answer-buttons");
 
 // Variable for the next button
-
+let nextButton = document.GetElementById("btn-next");
 
 
 // Variable to store the score index an initial score
