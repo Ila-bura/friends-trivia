@@ -4,9 +4,9 @@ const questions = [
     {
         question: 'How many sisters does Joey have?',
         answers: [
-            { text: 'seven', correct: true },
-            { text: 'six', correct: false },
-            { text: 'five', correct: false },
+            { text: '7', correct: true },
+            { text: '6', correct: false },
+            { text: '5', correct: false },
         ]
     },
 
@@ -117,12 +117,13 @@ function beginQuiz() {
     displayQuestion();
 }
 
-// Function to display the questions with corresponding number and update the text. Create and display a button and update the text with the possible answers.
+// Function to display the question with corresponding index number and update the text. Create and display a button and update the text with the possible answers to the question set.
 
 function displayQuestion() {
+    clearArea();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNumber = currentQuestionIndex + 1;
-    questionElement.innerHTML = questionNumber + currentQuestion.question;
+    questionElement.innerHTML = questionNumber + " - " + currentQuestion.question;
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
@@ -136,7 +137,16 @@ beginQuiz();
 
 // Function to check if answer is correct
 
-// Function to clear the area
+// Function to clear the area and reset previous question and answer before displaying the next question
+
+function clearArea() {
+
+    nextButton.style.display = "none";
+    while (answerButtons.firstChild) {
+        answerButtons.removeChild(answerButtons.firstChild);
+    }
+
+}
 
 // Function to display the final score
 
