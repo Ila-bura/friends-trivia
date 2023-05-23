@@ -105,9 +105,9 @@ let answerButton = document.GetElementById("answer-buttons");
 // Variable for the next button
 let nextButton = document.GetElementById("btn-next");
 
-
-// Variable to store the score index an initial score
-
+// Variable to store the score index and initial score
+let currentQuestionIndex = 0;
+let score = 0;
 
 // Function to start the quiz with question index and initial score set to 0
 
