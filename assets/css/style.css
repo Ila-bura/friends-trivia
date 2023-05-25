@@ -13,7 +13,13 @@
     height: 100vh;
     background: url("../images/new-york.jpg");
     background-size: cover;
+    position: relative;
+    min-height: 100vh;
 
+}
+
+#content-wrap {
+    padding-bottom: 8.5rem;
 }
 
 /* --------- Main heading */
@@ -63,13 +69,14 @@ h2 {
 
 /* --------- hide the hover effect when users select the button */
 
-.btn:hover:not([disabled]){
+.btn:hover:not([disabled]) {
     background: #AFC5EC;
     color: #20AEC8ED;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
+
 /* --------- prevent the users from selecting other options */
-.btn:disabled{
+.btn:disabled {
     cursor: no-drop;
 }
 
