@@ -138,7 +138,7 @@ function displayQuestion() {
     });
 }
 
-// Function to add the button clicked by the user and check if answer is correct; automatically highlight the correct answer if user selected the wrong one; add the next button;
+// Function to add the button clicked by the user and check if answer is correct; automatically highlight the correct answer if user selected the wrong one; add the next button; prevent the user from selecting other options once one answer is selected
 
 
 function pickAnswer(e) {

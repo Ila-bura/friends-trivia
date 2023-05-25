@@ -49,9 +49,9 @@ h2 {
 /* --------- Buttons */
 
 .btn {
-    background: #AEC8ED;
+    background: #FFFF;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: bold;
     width: 100%;
     border: 1px solid;
     padding: 10px;
@@ -61,10 +61,16 @@ h2 {
     transition: all 0.3s;
 }
 
-.btn:hover {
-    background: #FFFF;
-    color: #AEC8ED;
+/* --------- hide the hover effect when users select the button */
+
+.btn:hover:not([disabled]){
+    background: #AFC5EC;
+    color: #20AEC8ED;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+}
+/* --------- prevent the users from selecting other options */
+.btn:disabled{
+    cursor: no-drop;
 }
 
 #btn-next {
