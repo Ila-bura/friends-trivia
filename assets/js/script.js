@@ -140,15 +140,15 @@ function displayQuestion() {
 
 // Function to add the button clicked by the user and check if answer is correct; automatically highlight the correct answer if user selected the wrong one; add the next button; prevent the user from selecting other options once one answer is selected
 
+//Increase score by one
 
 function pickAnswer(e) {
     const chosenButton = e.target;
     const isCorrect = chosenButton.dataset.correct === "true";
     if (isCorrect) {
         chosenButton.classList.add("correct");
-    }
-
-    else {
+        score++;
+    }else {
         chosenButton.classList.add("incorrect");
     }
     Array.from(answerButtons.children).forEach(button => {
@@ -160,7 +160,32 @@ function pickAnswer(e) {
     nextButton.style.display = "block";
 }
 
+// Function to display the final score
 
+function displayScore(){
+    clearArea();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    nextButton.innerHTML = "Try again!";
+    nextButton.style.display = "block";
+}
+
+// Function next button to be clickable and update the index; if there is another question display it otherwise display the score
+function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length) {
+        displayQuestion();
+    }else {
+        displayScore();
+    }
+}
+
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    }else {
+        beginQuiz();
+    }
+});
 
 beginQuiz();
 
@@ -177,7 +202,7 @@ function clearArea() {
 
 }
 
-// Function to display the final score
+
 
 
 // Function to restart the quiz
