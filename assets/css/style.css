@@ -67,7 +67,7 @@ h2 {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 
-.btn-next {
+#btn-next {
     background: #F3C5DF;
     color: white;
     font-weight: 500;
@@ -81,7 +81,7 @@ h2 {
 
 }
 
-.btn-next:hover {
+#btn-next:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 

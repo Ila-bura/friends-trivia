@@ -138,7 +138,8 @@ function displayQuestion() {
     });
 }
 
-// Function to add the button clicked by the user and check if answer is correct
+// Function to add the button clicked by the user and check if answer is correct; automatically highlight the correct answer if user selected the wrong one; add the next button;
+
 
 function pickAnswer(e) {
     const chosenButton = e.target;
@@ -150,6 +151,13 @@ function pickAnswer(e) {
     else {
         chosenButton.classList.add("incorrect");
     }
+    Array.from(answerButtons.children).forEach(button => {
+        if(button.dataset.correct === "true") {
+            button.classList.add("correct");
+        }
+        button.disabled = true;
+    });
+    nextButton.style.display = "block";
 }
 
 
