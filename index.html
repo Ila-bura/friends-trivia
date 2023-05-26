@@ -28,27 +28,28 @@
 <body>
     <div id="page-container">
         <div id="content-wrap">
-        <h1 class="game-title">Friends Trivia Quiz</h1>
-        <div class="quiz-area">
-            <h2 id="question">Questions will be displayed here</h2>
-            <div id="answer-buttons">
-                <button class="btn">Option One</button>
-                <button class="btn">Option Two</button>
-                <button class="btn">Option Three</button>
+            <h1 class="game-title">Friends Trivia Quiz</h1>
+            <div class="quiz-area">
+                <h2 id="question">Questions will be displayed here</h2>
+                <div id="answer-buttons">
+                    <button class="btn">Option One</button>
+                    <button class="btn">Option Two</button>
+                    <button class="btn">Option Three</button>
+                </div>
+                <button id="btn-next">Next one</button>
             </div>
-            <button id="btn-next">Next one</button>
-        </div>
         </div>
 
+
+        <div id="audio-container">
+            <p><i class="fas fa-music"></i>
+                Play the quiz to the theme song <i class="fas fa-headphones"></i></p>
+            <audio controls autoplay loop>
+                <source src="assets/audio/theme-song.mp3" type="audio/mpeg" />
+                Your browser does not support the HTML5 audio tag.
+            </audio>
+        </div>
         <footer id="footer">
-            <div id="audio-container">
-                <p><i class="fas fa-music"></i>
-                    Play the quiz to the theme song <i class="fas fa-headphones"></i></p>
-                <audio controls autoplay loop>
-                    <source src="assets/audio/theme-song.mp3" type="audio/mpeg" />
-                    Your browser does not support the HTML5 audio tag.
-                </audio>
-            </div>
             <ul class="social-media">
                 <li><a href="https://facebook.com" target="_blank" rel="noopener"
                         aria-label="visit our Facebook page (it opens in a new tab)"><i class="fab fa-facebook"></i></a>

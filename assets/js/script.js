@@ -40,7 +40,7 @@ const questions = [
     },
 
     {
-        question: 'What is the name of Ross\'s monkey?',
+        question: 'What is the name of Ross\' monkey?',
         answers: [
             { text: 'Marcel', correct: true },
             { text: 'Miguel', correct: false },
@@ -51,8 +51,8 @@ const questions = [
     {
         question: 'What job does Chandler\'s dad do in Vegas?',
         answers: [
-            { text: 'A croupier', correct: false },
-            { text: 'A drag queen', correct: true },
+            { text: 'Croupier', correct: false },
+            { text: 'Drag queen', correct: true },
             { text: 'Elvis impersonator', correct: false },
         ]
     },
@@ -79,9 +79,9 @@ const questions = [
     {
         question: 'What Japanese product does Joey do a commercial for?',
         answers: [
-            { text: 'A lipstick for men', correct: true },
-            { text: 'A handbag for men', correct: false },
-            { text: 'A shower cap for men', correct: false },
+            { text: 'Lipstick for men', correct: true },
+            { text: 'Handbag for men', correct: false },
+            { text: 'Shower cap for men', correct: false },
         ]
     },
 
@@ -148,11 +148,11 @@ function pickAnswer(e) {
     if (isCorrect) {
         chosenButton.classList.add("correct");
         score++;
-    }else {
+    } else {
         chosenButton.classList.add("incorrect");
     }
     Array.from(answerButtons.children).forEach(button => {
-        if(button.dataset.correct === "true") {
+        if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
@@ -162,7 +162,7 @@ function pickAnswer(e) {
 
 // Function to display the final score
 
-function displayScore(){
+function displayScore() {
     clearArea();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
     nextButton.innerHTML = "Try again!";
@@ -170,19 +170,19 @@ function displayScore(){
 }
 
 // Function next button to be clickable and update the index; if there is another question display it otherwise display the score
-function handleNextButton(){
+function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length) {
+    if (currentQuestionIndex < questions.length) {
         displayQuestion();
-    }else {
+    } else {
         displayScore();
     }
 }
 
-nextButton.addEventListener("click", ()=>{
-    if(currentQuestionIndex < questions.length){
+nextButton.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
-    }else {
+    } else {
         beginQuiz();
     }
 });
