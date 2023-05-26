@@ -113,15 +113,18 @@ h2 {
 
 /* music player */
 #audio-container {
-    display: block;
+
     text-align: center;
-    margin: 20px;
+    margin-top: 20px;
+    position: flex;
+    color: #FFFFFF;
 
 }
 
 #audio-container p {
-    font-size: 20px;
+    font-size: 26px;
     padding: 20px;
+
 }
 
 /* footer */
