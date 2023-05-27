@@ -144,11 +144,115 @@ h2 {
 
 
 /* media queries */
+/* For medium screen sizes from 623px wide and down */
 
-/* For small screen sizes 320 X 480 */
-
-@media (max-width: 414px) {
-    .quiz-area {
-        color: red;
+@media (max-width: 623px) {
+    .game-title {
+        font-size: 35px;
     }
+
+    .quiz-area {
+        width: 60%;
+        max-width: 400px;
+    }
+
+    h2 {
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    #btn-next {
+
+        width: 100px;
+    }
+
+    #footer {
+        font-size: 18px;
+    }
+
+    #audio-container p {
+        font-size: 20px;
+
+    }
+
+    audio {
+        width: 60%;
+    }
+
+}
+
+/* For smaller screen sizes from 540px wide and down */
+
+@media (max-width: 540px) {
+
+    .game-title {
+        font-size: 30px;
+    }
+
+    .quiz-area {
+        width: 50%;
+        max-width: 300px;
+    }
+
+    h2 {
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    #btn-next {
+
+        width: 80px;
+    }
+
+    #audio-container {
+        display: none;
+    }
+
+    #footer {
+        height: 6.5rem;
+        font-size: 16px;
+    }
+}
+
+/* For smaller screen sizes from 280px wide and down */
+@media (max-width: 280px) {
+
+    .game-title {
+        font-size: 24px;
+    }
+
+    .quiz-area {
+        width: 55%;
+
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 100;
+    }
+
+    .btn {
+        font-size: 14px;
+    }
+
+    #btn-next {
+
+        font-size: 12px;
+    }
+
+    #footer {
+
+        font-size: 14px;
+    }
+
+
+
 }
