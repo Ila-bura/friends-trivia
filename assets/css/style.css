@@ -1,5 +1,4 @@
-/* --------- Overall style */
-
+/* --------- Overall app style */
 
 * {
     margin: 0;
@@ -10,11 +9,11 @@
 body {
     font-family: 'Darumadrop One', cursive;
     text-align: center;
-
 }
 
-#page-container {
+/* --------- Page wrapper */
 
+#page-container {
     width: 100vw;
     background: url("../images/new-york.jpg");
     background-size: cover;
@@ -22,7 +21,6 @@ body {
     min-height: 100vh;
 
 }
-
 
 /* --------- Main heading */
 
@@ -52,7 +50,7 @@ h2 {
     font-weight: 600;
 }
 
-/* --------- Buttons */
+/* --------- Answer buttons */
 
 .btn {
     background: rgb(223, 220, 239, .8);
@@ -67,7 +65,7 @@ h2 {
     transition: all 0.3s;
 }
 
-/* --------- hide the hover effect when users select the button */
+/* --------- hover effect hidden when users select the button */
 
 .btn:hover:not([disabled]) {
     background: rgb(223, 220, 239, .9);
@@ -76,9 +74,12 @@ h2 {
 }
 
 /* --------- prevent the users from selecting other options */
+
 .btn:disabled {
     cursor: no-drop;
 }
+
+/* --------- Next button */
 
 #btn-next {
     background: #F3C5DF;
@@ -91,13 +92,11 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     display: none;
-
 }
 
 #btn-next:hover {
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
-
 
 /* --------- Correct and incorrect selection */
 
@@ -109,8 +108,7 @@ h2 {
     background: #F7171B;
 }
 
-
-/* footer */
+/* Footer area */
 
 #footer {
     position: absolute;
@@ -142,7 +140,6 @@ h2 {
     padding: 20px;
     color: #3a3a3a;
 }
-
 
 /* media queries */
 
@@ -189,8 +186,6 @@ h2 {
         margin-top: -10px;
     }
 
-
-
     /* For medium screen sizes from 623px wide and down */
 
     @media (max-width: 623px) {
@@ -229,7 +224,6 @@ h2 {
         audio {
             width: 60%;
         }
-
     }
 
     /* For smaller screen sizes from 540px wide and down */
@@ -259,7 +253,6 @@ h2 {
             width: 80px;
         }
 
-
         #footer {
             height: 12.5rem;
             font-size: 12px;
@@ -268,41 +261,41 @@ h2 {
         #audio-container p {
             font-size: 18px;
         }
+    }
 
-        /* For smaller screen sizes from 280px wide and down */
-        @media (max-width: 280px) {
+    /* For smaller screen sizes from 280px wide and down */
+    @media (max-width: 280px) {
 
-            .game-title {
-                font-size: 24px;
-            }
+        .game-title {
+            font-size: 24px;
+        }
 
-            .quiz-area {
-                width: 55%;
+        .quiz-area {
+            width: 55%;
 
-            }
+        }
 
-            h2 {
-                font-size: 16px;
-                font-weight: 100;
-            }
+        h2 {
+            font-size: 16px;
+            font-weight: 100;
+        }
 
-            .btn {
-                font-size: 14px;
-            }
+        .btn {
+            font-size: 14px;
+        }
 
-            #btn-next {
+        #btn-next {
 
-                font-size: 12px;
-            }
+            font-size: 12px;
+        }
 
-            #footer {
+        #footer {
 
-                font-size: 12px;
-            }
+            font-size: 12px;
+        }
 
-            #audio-container p {
-                font-size: 16px;
-
-
-
-            }
+        #audio-container p {
+            font-size: 16px;
+        }
+    }
+}
