@@ -31,8 +31,6 @@ body {
     color: #F3C5DF;
     font-weight: 600;
     padding-top: 50px;
-
-
 }
 
 /* --------- Quiz area layout */
@@ -43,7 +41,7 @@ body {
     margin: 60px auto 0;
     border-radius: 20px;
     padding: 30px;
-    background-color: rgb(223, 220, 239, .4);
+    background-color: rgb(223, 220, 239, .5);
 
 }
 
@@ -56,7 +54,7 @@ h2 {
 /* --------- Buttons */
 
 .btn {
-    background: rgb(223, 220, 239, .4);
+    background: rgb(223, 220, 239, .8);
     font-family: 'Darumadrop One', cursive;
     font-size: 20px;
     width: 100%;
@@ -111,31 +109,22 @@ h2 {
 }
 
 
-/* music player */
-#audio-container {
-
-    text-align: center;
-    margin-top: 20px;
-    position: flex;
-    color: #FFFFFF;
-
-}
-
-#audio-container p {
-    font-size: 26px;
-    padding: 20px;
-
-}
-
 /* footer */
 
 #footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 8.5rem;
+    height: 14.5rem;
     text-align: center;
     font-size: 20px;
+}
+
+/* music player */
+
+#audio-container p {
+    font-size: 24px;
+    padding: 20px;
 }
 
 .social-media {
@@ -155,3 +144,11 @@ h2 {
 
 
 /* media queries */
+
+/* For small screen sizes 320 X 480 */
+
+@media (max-width: 414px) {
+    .quiz-area {
+        color: red;
+    }
+}
