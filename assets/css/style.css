@@ -1,5 +1,6 @@
 /* --------- Overall style */
 
+
 * {
     margin: 0;
     padding: 0;
@@ -144,63 +145,22 @@ h2 {
 
 
 /* media queries */
-/* For medium screen sizes from 623px wide and down */
 
-@media (max-width: 623px) {
+/* For larger to medium screens size from 1200px wide and down */
+
+@media screen and (max-width: 1100px) {
     .game-title {
         font-size: 35px;
     }
 
     .quiz-area {
-        width: 60%;
-        max-width: 400px;
+        width: 80%;
+        max-width: 800px;
+        margin-top: 10px;
     }
 
     h2 {
-        font-size: 22px;
-        font-weight: 300;
-    }
-
-    .btn {
-        font-size: 16px;
-    }
-
-    #btn-next {
-
-        width: 100px;
-    }
-
-    #footer {
-        font-size: 18px;
-    }
-
-    #audio-container p {
         font-size: 20px;
-
-    }
-
-    audio {
-        width: 60%;
-    }
-
-}
-
-/* For smaller screen sizes from 540px wide and down */
-
-@media (max-width: 540px) {
-
-    .game-title {
-        font-size: 30px;
-    }
-
-    .quiz-area {
-        width: 50%;
-        max-width: 300px;
-    }
-
-    h2 {
-        font-size: 18px;
-        font-weight: 200;
     }
 
     .btn {
@@ -212,47 +172,137 @@ h2 {
         width: 80px;
     }
 
-    #audio-container {
-        display: none;
-    }
-
     #footer {
-        height: 6.5rem;
-        font-size: 16px;
-    }
-}
-
-/* For smaller screen sizes from 280px wide and down */
-@media (max-width: 280px) {
-
-    .game-title {
-        font-size: 24px;
-    }
-
-    .quiz-area {
-        width: 55%;
-
-    }
-
-    h2 {
-        font-size: 16px;
-        font-weight: 100;
-    }
-
-    .btn {
-        font-size: 14px;
-    }
-
-    #btn-next {
-
         font-size: 12px;
+        height: 11.5rem;
+
     }
 
-    #footer {
+    #audio-container p {
+        font-size: 16px;
+        padding: 2px;
+        margin-top: 40px;
 
-        font-size: 14px;
+    }
+
+    .social-media {
+        margin-top: -10px;
     }
 
 
 
-}
+    /* For medium screen sizes from 623px wide and down */
+
+    @media (max-width: 623px) {
+        .game-title {
+            font-size: 35px;
+        }
+
+        .quiz-area {
+            width: 60%;
+            max-width: 400px;
+        }
+
+        h2 {
+            font-size: 22px;
+            font-weight: 300;
+        }
+
+        .btn {
+            font-size: 16px;
+        }
+
+        #btn-next {
+
+            width: 100px;
+        }
+
+        #footer {
+            font-size: 18px;
+        }
+
+        #audio-container p {
+            font-size: 20px;
+
+        }
+
+        audio {
+            width: 60%;
+        }
+
+    }
+
+    /* For smaller screen sizes from 540px wide and down */
+
+    @media (max-width: 540px) {
+
+        .game-title {
+            font-size: 30px;
+        }
+
+        .quiz-area {
+            width: 50%;
+            max-width: 300px;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 200;
+        }
+
+        .btn {
+            font-size: 16px;
+        }
+
+        #btn-next {
+
+            width: 80px;
+        }
+
+
+        #footer {
+            height: 12.5rem;
+            font-size: 12px;
+        }
+
+        #audio-container p {
+            font-size: 18px;
+        }
+
+        /* For smaller screen sizes from 280px wide and down */
+        @media (max-width: 280px) {
+
+            .game-title {
+                font-size: 24px;
+            }
+
+            .quiz-area {
+                width: 55%;
+
+            }
+
+            h2 {
+                font-size: 16px;
+                font-weight: 100;
+            }
+
+            .btn {
+                font-size: 14px;
+            }
+
+            #btn-next {
+
+                font-size: 12px;
+            }
+
+            #footer {
+
+                font-size: 12px;
+            }
+
+            #audio-container p {
+                font-size: 16px;
+
+
+
+            }
