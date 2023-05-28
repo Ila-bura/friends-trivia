@@ -91,9 +91,12 @@ h2 {
     border-radius: 4px;
     cursor: pointer;
     display: none;
+    font-family: 'Permanent Marker', cursive;
 }
 
 #btn-next:hover {
+    background: rgb(223, 220, 239, .9);
+    color: #487FC0;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
 }
 

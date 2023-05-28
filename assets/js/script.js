@@ -197,12 +197,13 @@ function clearArea() {
 
 }
 
-// function to display the final score
+// function to display the final score and two different phrases based on score
 
 function displayScore() {
     clearArea()
     if (score >= 6 ) {
-        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You are a real Friends fan, well done!`;
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! 
+        You are a real Friends fan, well done!`;
         nextButton.innerHTML = "Take the quiz again!";
     nextButton.style.display = "block";
     } else {
