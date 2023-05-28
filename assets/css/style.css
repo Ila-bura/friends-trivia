@@ -251,7 +251,6 @@ h2 {
         }
 
         #btn-next {
-
             width: 80px;
         }
 
@@ -273,8 +272,8 @@ h2 {
         }
 
         .quiz-area {
-            width: 55%;
-
+            width: 45%;
+            padding: 20px;
         }
 
         h2 {
@@ -292,7 +291,6 @@ h2 {
         }
 
         #footer {
-
             font-size: 12px;
         }
 
@@ -300,4 +298,41 @@ h2 {
             font-size: 16px;
         }
     }
+}
+
+/* For iPhone 4 screens */
+
+@media screen and (max-width: 320px) and (max-width: 480px) {
+    .game-title {
+        font-size: 22px;
+        margin-top: -10px;
+    }
+
+    .quiz-area {
+        height: 35%;
+        padding: 20px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    #btn-next {
+        font-size: 10px;
+    }
+
+    #audio-container {
+        display: none;
+    }
+
+    #footer {
+        font-size: 10px;
+        height: 3.5rem;
+    }
+
 }
