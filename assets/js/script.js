@@ -62,7 +62,7 @@ const questions = [
         answers: [
             { text: 'Princess Consuela Banana Hammock', correct: true },
             { text: 'Regina Phalange', correct: false },
-            { text: 'Ursula Muriel', correct: false },
+            { text: 'Nestlé Toulouse', correct: false },
 
         ]
     },
@@ -200,16 +200,16 @@ function clearArea() {
 // function to display the final score and two different phrases based on score
 
 function displayScore() {
-    clearArea()
-    if (score >= 6 ) {
+    clearArea();
+    if (score >= 6) {
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}! 
-        You are a real Friends fan, well done!`;
-        nextButton.innerHTML = "Take the quiz again!";
-    nextButton.style.display = "block";
+        Oh. My. God.!`;
+        nextButton.innerHTML = "Once more!";
+        nextButton.style.display = "block";
     } else {
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Can this quiz BE any harder?!`;
-    nextButton.innerHTML = "Try again!";
-    nextButton.style.display = "block";
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Can this quiz BE any harder?!`;
+        nextButton.innerHTML = "Try again!";
+        nextButton.style.display = "block";
     };
 }
 
