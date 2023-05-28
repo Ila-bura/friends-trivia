@@ -1,4 +1,4 @@
-// Array with ten sets of questions with their corresponding possible options
+// array with ten sets of questions with their corresponding possible options
 
 const questions = [
     {
@@ -96,20 +96,23 @@ const questions = [
 
 ];
 
-// Variable for the question
+// variable for the question
 const questionElement = document.getElementById("question");
 
-// Variable for the answer
+// variable for the answer
 const answerButtons = document.getElementById("answer-buttons");
 
-// Variable for the next button
+// variable for the next button
 const nextButton = document.getElementById("btn-next");
 
-// Variable to store the score index and initial score
+// variable to store the score index and initial score
 let currentQuestionIndex = 0;
 let score = 0;
 
-// Function to start the quiz with question index and initial score set to 0 then call the function to show the question
+// event listener
+document.addEventListener("DOMContentLoaded", beginQuiz);
+
+// function to start the quiz with question index and initial score set to 0 then call the function to show the question
 function beginQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -117,7 +120,7 @@ function beginQuiz() {
     displayQuestion();
 }
 
-// Function to display the question with corresponding index number and update the text. Create and display a button and update the text with the possible answers to the question set. Create a click event for the selection of the answer. 
+// function to display the question with corresponding index number and update the text. Create and display a button and update the text with the possible answers to the question set. Create a click event for the selection of the answer. 
 
 function displayQuestion() {
     clearArea();
@@ -138,9 +141,9 @@ function displayQuestion() {
     });
 }
 
-// Function to add the button clicked by the user and check if answer is correct; automatically highlight the correct answer if user selected the wrong one; add the next button; prevent the user from selecting other options once one answer is selected
+// function to add the button clicked by the user and check if answer is correct; automatically highlight the correct answer if user selected the wrong one; add the next button; prevent the user from selecting other options once one answer is selected
 
-//Increase score by one
+//increase score by one
 
 function pickAnswer(e) {
     const chosenButton = e.target;
@@ -160,16 +163,8 @@ function pickAnswer(e) {
     nextButton.style.display = "block";
 }
 
-// Function to display the final score
 
-function displayScore() {
-    clearArea();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
-    nextButton.innerHTML = "Try again!";
-    nextButton.style.display = "block";
-}
-
-// Function next button to be clickable and update the index; if there is another question display it otherwise display the score
+// function next button to be clickable and update the index; if there is another question display it otherwise display the score
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -191,7 +186,7 @@ beginQuiz();
 
 
 
-// Function to clear the area and reset previous answers before displaying the next question
+// function to clear the area and reset previous answers before displaying the next question
 
 function clearArea() {
 
@@ -202,7 +197,18 @@ function clearArea() {
 
 }
 
+// function to display the final score
 
+function displayScore() {
+    clearArea()
+    if (score >= 6 ) {
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! You are a real Friends fan, well done!`;
+        nextButton.innerHTML = "Take the quiz again!";
+    nextButton.style.display = "block";
+    } else {
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Can this quiz BE any harder?!`;
+    nextButton.innerHTML = "Try again!";
+    nextButton.style.display = "block";
+    };
+}
 
-
-// Function to restart the quiz
