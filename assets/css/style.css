@@ -1,9 +1,10 @@
-/* --------- Overall app style */
+/* --------- overall app style */
 
 * {
+    border: none;
     margin: 0;
     padding: 0;
-    border: none;
+
 }
 
 body {
@@ -11,37 +12,36 @@ body {
     text-align: center;
 }
 
-/* --------- Page wrapper */
+/* --------- page wrapper */
 
 #page-container {
-    width: 100vw;
     background: url("../images/new-york.jpg");
     background-size: cover;
-    position: relative;
     min-height: 100vh;
+    position: relative;
+    width: 100vw;
 
 }
 
-/* --------- Main heading */
+/* --------- main heading */
 
 .game-title {
+    color: #F3C5DF;
     font-family: 'Permanent Marker', cursive;
     font-size: 55px;
-    color: #F3C5DF;
     font-weight: 600;
     padding-top: 50px;
 }
 
-/* --------- Quiz area layout */
+/* --------- quiz area layout */
 
 .quiz-area {
-    width: 80%;
-    max-width: 600px;
-    margin: 60px auto 0;
-    border-radius: 20px;
-    padding: 30px;
     background-color: rgb(223, 220, 239, .5);
-
+    border-radius: 20px;
+    margin: 60px auto 0;
+    max-width: 600px;
+    padding: 30px;
+    width: 80%;
 }
 
 h2 {
@@ -50,27 +50,27 @@ h2 {
     font-weight: 600;
 }
 
-/* --------- Answer buttons */
+/* --------- answer buttons */
 
 .btn {
     background: rgb(223, 220, 239, .8);
-    font-family: 'Darumadrop One', cursive;
-    font-size: 20px;
-    width: 100%;
     border: 1px solid;
-    padding: 10px;
-    margin: 10px 0;
     border-radius: 4px;
     cursor: pointer;
+    font-family: 'Darumadrop One', cursive;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
     transition: all 0.3s;
+    width: 100%;
 }
 
 /* --------- hover effect hidden when users select the button */
 
 .btn:hover:not([disabled]) {
     background: rgb(223, 220, 239, .9);
-    color: #487FC0;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    color: #487FC0;
 }
 
 /* --------- prevent the users from selecting other options */
@@ -79,28 +79,28 @@ h2 {
     cursor: no-drop;
 }
 
-/* --------- Next button */
+/* --------- next button */
 
 #btn-next {
     background: #F3C5DF;
-    font-weight: bold;
-    width: 150px;
     border: 0;
-    padding: 10px;
-    margin: 20px auto 0;
     border-radius: 4px;
     cursor: pointer;
     display: none;
     font-family: 'Permanent Marker', cursive;
+    font-weight: bold;
+    margin: 20px auto 0;
+    padding: 10px;
+    width: 150px;
 }
 
 #btn-next:hover {
     background: rgb(223, 220, 239, .9);
-    color: #487FC0;
     box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    color: #487FC0;
 }
 
-/* --------- Correct and incorrect selection */
+/* --------- correct and incorrect selection */
 
 .correct {
     background: #1FA573;
@@ -110,15 +110,15 @@ h2 {
     background: #F7171B;
 }
 
-/* Footer area */
+/* footer area */
 
 #footer {
-    position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 14.5rem;
-    text-align: center;
     font-size: 20px;
+    height: 14.5rem;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
 /* music player */
@@ -137,10 +137,10 @@ h2 {
 }
 
 .social-media i {
+    color: #3a3a3a;
     font-size: 150%;
     margin: 1px;
     padding: 20px;
-    color: #3a3a3a;
 }
 
 /* media queries */
@@ -153,9 +153,9 @@ h2 {
     }
 
     .quiz-area {
-        width: 80%;
-        max-width: 800px;
         margin-top: 10px;
+        max-width: 800px;
+        width: 80%;
     }
 
     h2 {
@@ -167,21 +167,18 @@ h2 {
     }
 
     #btn-next {
-
         width: 80px;
     }
 
     #footer {
         font-size: 12px;
         height: 11.5rem;
-
     }
 
     #audio-container p {
         font-size: 16px;
-        padding: 2px;
         margin-top: 40px;
-
+        padding: 2px;
     }
 
     .social-media {
@@ -197,8 +194,8 @@ h2 {
     }
 
     .quiz-area {
-        width: 60%;
         max-width: 400px;
+        width: 60%;
     }
 
     h2 {
@@ -211,7 +208,6 @@ h2 {
     }
 
     #btn-next {
-
         width: 100px;
     }
 
@@ -221,7 +217,6 @@ h2 {
 
     #audio-container p {
         font-size: 20px;
-
     }
 
     audio {
@@ -238,8 +233,8 @@ h2 {
     }
 
     .quiz-area {
-        width: 50%;
         max-width: 300px;
+        width: 50%;
     }
 
     h2 {
@@ -256,8 +251,8 @@ h2 {
     }
 
     #footer {
-        height: 12.5rem;
         font-size: 12px;
+        height: 12.5rem;
     }
 
     #audio-container p {
@@ -274,8 +269,8 @@ h2 {
     }
 
     .quiz-area {
-        width: 55%;
         padding: 10px;
+        width: 55%;
     }
 
     h2 {
@@ -290,8 +285,8 @@ h2 {
     }
 
     #btn-next {
-        margin-top: 5px;
         font-size: 10px;
+        margin-top: 5px;
     }
 
     #footer {
@@ -312,8 +307,8 @@ h2 {
     }
 
     .quiz-area {
-        width: 55%;
         padding: 10px;
+        width: 55%;
     }
 
     h2 {
@@ -328,8 +323,8 @@ h2 {
     }
 
     #btn-next {
-        margin-top: 5px;
         font-size: 10px;
+        margin-top: 5px;
     }
 
     #footer {
@@ -341,7 +336,6 @@ h2 {
     }
 }
 
-
 /* For iPhone 4 screens */
 
 @media screen and (max-width: 320px) and (max-width: 480px) {
@@ -352,14 +346,14 @@ h2 {
 
     .quiz-area {
         height: 25%;
-        padding: 10px;
         margin-top: -10px;
+        padding: 10px;
     }
 
     .btn {
         font-size: 12px;
-        width: 105px;
         padding: 5px;
+        width: 105px;
     }
 
     h2 {
@@ -369,8 +363,8 @@ h2 {
 
     #btn-next {
         font-size: 10px;
-        width: 70px;
         margin-top: 5px;
+        width: 70px;
     }
 
     #audio-container p {
@@ -380,7 +374,5 @@ h2 {
     #footer {
         font-size: 10px;
         height: 10.5rem;
-
     }
-
 }
