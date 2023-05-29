@@ -30,7 +30,7 @@ body {
     font-family: 'Permanent Marker', cursive;
     font-size: 55px;
     font-weight: 600;
-    padding-top: 50px;
+    padding-top: 30px;
 }
 
 /* --------- quiz area layout */
@@ -38,9 +38,9 @@ body {
 .quiz-area {
     background-color: rgb(223, 220, 239, .5);
     border-radius: 20px;
-    margin: 60px auto 0;
+    margin: 40px auto 0;
     max-width: 600px;
-    padding: 30px;
+    padding: 20px;
     width: 80%;
 }
 
