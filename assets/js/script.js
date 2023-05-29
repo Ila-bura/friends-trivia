@@ -33,8 +33,8 @@ const questions = [
         question: 'What is a lobster?',
         answers: [
             { text: 'Your gym buddy', correct: false },
-            { text: 'Your favourite roommate', correct: false },
-            { text: 'The person you are meant to be with', correct: true },
+            { text: 'Your roommate', correct: false },
+            { text: 'Your soulmate', correct: true },
 
         ]
     },
@@ -112,7 +112,10 @@ let score = 0;
 // event listener
 document.addEventListener("DOMContentLoaded", beginQuiz);
 
-// function to start the quiz with question index and initial score set to 0 then call the function to show the question
+/** function to start the quiz with question index and initial score set to 0 
+ * then call the function to show the question
+ */
+
 function beginQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -120,7 +123,11 @@ function beginQuiz() {
     displayQuestion();
 }
 
-// function to display the question with corresponding index number and update the text. Create and display a button and update the text with the possible answers to the question set. Create a click event for the selection of the answer. 
+/** 
+ * function to display the question with corresponding index number and update the text. 
+ * Create and display a button and update the text with the possible answers. 
+ * Create a click event for the selection of the answer. 
+*/
 
 function displayQuestion() {
     clearArea();
@@ -141,9 +148,15 @@ function displayQuestion() {
     });
 }
 
-// function to add the button clicked by the user and check if answer is correct; automatically highlight the correct answer if user selected the wrong one; add the next button; prevent the user from selecting other options once one answer is selected
+/** 
+ * function to add the button clicked by the user and check if answer is correct; 
+ * automatically highlight the correct answer if user selected the wrong one; 
+ * add the next button; 
+ * prevent the user from selecting other options once one answer is selected
+ * increase score by one
+*/
 
-//increase score by one
+
 
 function pickAnswer(e) {
     const chosenButton = e.target;
@@ -164,7 +177,11 @@ function pickAnswer(e) {
 }
 
 
-// function next button to be clickable and update the index; if there is another question display it otherwise display the score
+/** 
+ * function next button to be clickable and update the index; 
+ * if there is another question display it otherwise display the score
+*/
+
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
