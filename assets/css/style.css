@@ -150,10 +150,11 @@ h2 {
 @media screen and (max-width: 1100px) {
     .game-title {
         font-size: 35px;
+        padding-top: 30px;
     }
 
     .quiz-area {
-        margin-top: 10px;
+        margin: 40px auto 0;
         max-width: 800px;
         width: 80%;
     }
