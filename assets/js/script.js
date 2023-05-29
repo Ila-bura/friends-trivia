@@ -218,15 +218,21 @@ function clearArea() {
 
 function displayScore() {
     clearArea();
-    if (score >= 6) {
+    if (score === 10) {
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}! 
         Oh. My. God.!`;
         nextButton.innerHTML = "Once more!";
         nextButton.style.display = "block";
-    } else {
+    } else if (score <= 5) {
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Can this quiz BE any harder?!`;
         nextButton.innerHTML = "Try again!";
         nextButton.style.display = "block";
-    };
+    } else {
+        if (score > 5 && score < 10) {
+            questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Not too shabby!`;
+            nextButton.innerHTML = "Try again!";
+            nextButton.style.display = "block";
+        }
+        // Handle the case where score is greater than 10 or less than 0 
+    }
 }
-
