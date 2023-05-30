@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Permanent+Marker&display=swap');
+
 /* --------- overall app style */
 
 * {
@@ -145,7 +148,7 @@ h2 {
 
 /* media queries */
 
-/* For larger screens size from 1200px wide */
+/* For larger screens size from 1100px wide */
 
 @media screen and (max-width: 1100px) {
     .game-title {
