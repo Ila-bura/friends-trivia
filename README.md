@@ -42,6 +42,9 @@ The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-
     - [Local Development](#local-development)
       - [How to Fork](#how-to-fork)
       - [How to Clone](#how-to-clone)
+  - [Testing](#testing-1)
+    - [Solved Bugs](#solved-bugs)
+    - [Known Bugs](#known-bugs)
 
 ## UX
 
@@ -63,8 +66,8 @@ The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-
 
 ### Wireframes
 
-![Desktop wireframe](assets/images/images-readme/wireframe-fullscreen.png)
-![Smartphone wireframe](assets/images/images-readme/wireframe-smartphone.png)
+![Desktop wireframe](assets/images/images-readme/desktop-screen-wireframe.png)
+![Mobile wireframe](assets/images/images-readme/mobile-screen-wireframe.png)
 
 ### Colour Scheme
 
@@ -139,7 +142,13 @@ All images used were created by me, and styled to give it the feel of an interac
 
 ### Frameworks, Libraries & Programs Used
 
+- [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
+
 - [Balsamiq](https://balsamiq.com/) - Used to create wireframes.
+
+- [Birme](https://www.birme.net/) To resize images and convert to webp format.
+
+- [Favicon.io](https://favicon.io/) To create favicon.
 
 - [Git](https://git-scm.com/) - For version control.
 
@@ -147,17 +156,11 @@ All images used were created by me, and styled to give it the feel of an interac
 
 - [GitPod](https://gitpod.io/) - IDE used to create the site.
 
-- [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
-
 - [Google Developer Tools](https://developers.google.com/web/tools) - To troubleshoot and test features, solve issues with responsiveness and styling.
 
+- [Google Fonts](https://fonts.google.com/) - To import the fonts used on the website.
+
 - [TinyPNG](https://tinypng.com/) To compress images
-
-- [Birme](https://www.birme.net/) To resize images and convert to webp format.
-
-- [Favicon.io](https://favicon.io/) To create favicon.
-
-- [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
 
 ## Deployment & Local Development
 
@@ -193,3 +196,15 @@ To clone the repository:
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+## Testing
+
+Please refer to [TESTING.md](TESTING.md) file for all testing carried out.
+
+### Solved Bugs
+
+### Known Bugs
+
+- A warning message is displayed in the console on the live page when testing with Lighthouse. After researching the matter, the error appears to be related to teh fact that GitHub hosted pages disable Google's 3rd party cookie alternative FLoC, which then throws this error. The error doesn't affect the website in any way.
+
+  ![Console warning](assets/images/images-readme/console.warning.png)
