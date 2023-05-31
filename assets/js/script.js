@@ -20,7 +20,7 @@ const questions = [
     },
 
     {
-        question: 'What is the title of Phoebe\'s most popular song?',
+        question: 'What\'s the title of Phoebe\'s hit song?',
         answers: [
             { text: 'Stinky Cat', correct: false },
             { text: 'Smelly Cat', correct: true },
@@ -40,7 +40,7 @@ const questions = [
     },
 
     {
-        question: 'What is the name of Ross\' monkey?',
+        question: 'What\'s the name of Ross\' monkey?',
         answers: [
             { text: 'Marcel', correct: true },
             { text: 'Miguel', correct: false },
@@ -58,17 +58,17 @@ const questions = [
     },
 
     {
-        question: 'What did Phoebe legally change her name to?',
+        question: 'Who sang the theme song?',
         answers: [
-            { text: 'Princess Consuela Banana Hammock', correct: true },
-            { text: 'Regina Phalange', correct: false },
-            { text: 'Nestlé Toulouse', correct: false },
+            { text: 'The Rembrandts', correct: true },
+            { text: 'Blur', correct: false },
+            { text: 'The Corrs', correct: false },
 
         ]
     },
 
     {
-        question: 'Which of these celebrities did not make a cameo in the series?',
+        question: 'Which celebrity did not make a cameo in the series?',
         answers: [
             { text: 'Robin Williams', correct: false },
             { text: 'Isabella Rossellini', correct: false },
@@ -86,7 +86,7 @@ const questions = [
     },
 
     {
-        question: 'What are the names of Monica and Ross\' parents?',
+        question: 'What are Monica and Ross\' parents called?',
         answers: [
             { text: 'Pam and Pete', correct: false },
             { text: 'Judy and Jack', correct: true },
@@ -156,8 +156,6 @@ function displayQuestion() {
  * increase score by one
 */
 
-
-
 function pickAnswer(e) {
     const chosenButton = e.target;
     const isCorrect = chosenButton.dataset.correct === "true";
@@ -175,7 +173,6 @@ function pickAnswer(e) {
     });
     nextButton.style.display = "block";
 }
-
 
 /** 
  * function next button to be clickable and update the index; 
@@ -201,8 +198,6 @@ nextButton.addEventListener("click", () => {
 
 beginQuiz();
 
-
-
 // function to clear the area and reset previous answers before displaying the next question
 
 function clearArea() {
@@ -211,7 +206,6 @@ function clearArea() {
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
-
 }
 
 // function to display the final score and two different phrases based on score
