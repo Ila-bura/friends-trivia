@@ -1,4 +1,4 @@
-// array with ten sets of questions with their corresponding possible options
+// Array with ten sets of questions and their corresponding possible options
 
 const questions = [
     {
@@ -96,23 +96,23 @@ const questions = [
 
 ];
 
-// variable for the question
+// Variable for the question
 const questionElement = document.getElementById("question");
 
-// variable for the answer
+// Variable for the answer
 const answerButtons = document.getElementById("answer-buttons");
 
-// variable for the next button
+// Variable for the next button
 const nextButton = document.getElementById("btn-next");
 
-// variable to store the score index and initial score
+// Variable to store the score index and initial score
 let currentQuestionIndex = 0;
 let score = 0;
 
-// event listener
+// Event listener: wait for the DOM to finish loading before running the quiz
 document.addEventListener("DOMContentLoaded", beginQuiz);
 
-/** function to start the quiz with question index and initial score set to 0 
+/** Function to start the quiz with question index and initial score set to 0 
  * then call the function to show the question
  */
 
@@ -124,9 +124,9 @@ function beginQuiz() {
 }
 
 /** 
- * function to display the question with corresponding index number and update the text. 
+ * Function to display the question with corresponding index number and update the text. 
  * Create and display a button and update the text with the possible answers. 
- * Create a click event for the selection of the answer. 
+ * Event listener with click event for the selection of the answer. 
 */
 
 function displayQuestion() {
@@ -149,10 +149,10 @@ function displayQuestion() {
 }
 
 /** 
- * function to add the button clicked by the user and check if answer is correct; 
- * automatically highlight the correct answer if user selected the wrong one; 
- * add the next button; 
- * prevent the user from selecting other options once one answer is selected
+ * Function to register the option clicked by the user and check if answer is correct; 
+ * automatically highlight the correct answer; 
+ * display the "Next" button; 
+ * prevent the user from selecting another option once one answer is selected;
  * increase score by one
 */
 
@@ -175,8 +175,9 @@ function pickAnswer(e) {
 }
 
 /** 
- * function next button to be clickable and update the index; 
- * if there is another question display it otherwise display the score
+ * Function for the "Next" button to be clickable and update the index; 
+ * display the subsequent question until the last one;
+ * after the tenth question, display the score
 */
 
 function handleNextButton() {
@@ -188,6 +189,8 @@ function handleNextButton() {
     }
 }
 
+// Event listener with click event for the "Next" button; 
+
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
@@ -198,7 +201,7 @@ nextButton.addEventListener("click", () => {
 
 beginQuiz();
 
-// function to clear the area and reset previous answers before displaying the next question
+// Function to clear the area and reset previous answer before displaying the next question
 
 function clearArea() {
 
@@ -208,7 +211,7 @@ function clearArea() {
     }
 }
 
-// function to display the final score and two different phrases based on score
+// Function to display the final score and three different phrases based on score
 
 function displayScore() {
     clearArea();

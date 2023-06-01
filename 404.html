@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- meta description and keywords-->
+    <meta name="description" content="fun quiz game to test your knowledge on Friends, the iconic TV show">
+    <meta name="keywords" content="trivia quiz, pub quiz, Friends TV show, fun game">
+
     <!-- favicon link -->
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico'>
 
@@ -20,10 +24,24 @@
 
 <body>
     <div id="page-container">
-        <h1>404!</h1>
-        <h2>Oops! Nothing to see here! Click <a href="index.html">here</a>to go back to the homepage</h2>
+        <div id="content-wrap">
+            <h1 class="game-title">404!</h1>
+            <h2>Oops! Nothing to see here! Go back to the <a href="index.html">homepage</a></h2>
+        </div>
+    </div>
 
+    <!--- footer element -->
     <footer id="footer">
+        <div id="audio-container">
+            <p><i class="fas fa-music"></i>
+                Play the theme song!</p>
+            <audio controls loop>
+                <source src="assets/audio/theme-song.mp3" type="audio/mpeg">
+                Your browser does not support the HTML5 audio tag.
+            </audio>
+        </div>
+
+        <!--- social media links -->
         <ul class="social-media">
             <li><a href="https://facebook.com" target="_blank" rel="noopener"
                     aria-label="visit our Facebook page (it opens in a new tab)"><i class="fab fa-facebook"></i></a>
@@ -37,8 +55,10 @@
         </ul>
     </footer>
 
+
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/c7dbda0798.js" crossorigin="anonymous"></script>
+
     <!-- JavaScript link -->
     <script src="assets/js/script.js"></script>
     </div>
