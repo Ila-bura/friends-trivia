@@ -221,7 +221,7 @@ function displayScore() {
         nextButton.innerHTML = "Once more!";
         nextButton.style.display = "block";
     } else if (score <= 5) {
-        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Can this quiz BE any harder?!`;
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}! Could this quiz BE any harder?!`;
         nextButton.innerHTML = "Try again!";
         nextButton.style.display = "block";
     } else {

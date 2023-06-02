@@ -22,7 +22,6 @@ body {
     min-height: 100vh;
     position: relative;
     width: 100vw;
-
 }
 
 /* --------- main heading */
@@ -114,8 +113,11 @@ h2 {
 
 /* footer area */
 
-#footer {
+#media-container {
     background-color: rgb(223, 220, 239, .6);
+}
+
+#footer {
     bottom: 0;
     font-size: 20px;
     height: 14.5rem;
@@ -143,7 +145,7 @@ h2 {
     color: #3a3a3a;
     font-size: 150%;
     margin: 1px;
-    padding: 20px;
+    padding: 25px;
 }
 
 /* media queries */
@@ -153,11 +155,11 @@ h2 {
 @media screen and (max-width: 1100px) {
     .game-title {
         font-size: 35px;
-        padding-top: 30px;
+        padding-top: 20px;
     }
 
     .quiz-area {
-        margin: 40px auto 0;
+        margin: 25px auto 0;
         max-width: 800px;
         width: 80%;
     }
@@ -174,19 +176,24 @@ h2 {
         width: 80px;
     }
 
+    #media-player {
+        height: 50px;
+        padding: 6px;
+    }
+
     #footer {
-        font-size: 12px;
-        height: 11.5rem;
+        font-size: 14px;
+        height: 12.5rem;
     }
 
     #audio-container p {
-        font-size: 16px;
+        font-size: 18px;
         margin-top: 40px;
-        padding: 2px;
+        padding: 10px;
     }
 
     .social-media {
-        margin-top: -10px;
+        margin-top: -20px;
     }
 }
 
@@ -213,6 +220,11 @@ h2 {
 
     #btn-next {
         width: 100px;
+    }
+
+    #media-player {
+        height: 40px;
+        padding: 10px;
     }
 
     #footer {
@@ -254,6 +266,11 @@ h2 {
         width: 80px;
     }
 
+    #media-player {
+        height: 40px;
+        padding: 10px;
+    }
+
     #footer {
         font-size: 12px;
         height: 12.5rem;
@@ -261,6 +278,7 @@ h2 {
 
     #audio-container p {
         font-size: 18px;
+        padding: 10px;
     }
 }
 
@@ -293,12 +311,18 @@ h2 {
         margin-top: 5px;
     }
 
+    #media-player {
+        height: 40px;
+        padding: 6px;
+    }
+
     #footer {
         font-size: 12px;
     }
 
     #audio-container p {
         font-size: 16px;
+        padding: 15px;
     }
 }
 
@@ -331,12 +355,17 @@ h2 {
         margin-top: 5px;
     }
 
+    #media-player {
+        height: 40px;
+    }
+
     #footer {
         font-size: 12px;
     }
 
     #audio-container p {
         font-size: 16px;
+        padding: 10px;
     }
 }
 
@@ -371,8 +400,13 @@ h2 {
         width: 70px;
     }
 
+    #media-player {
+        height: 40px;
+    }
+
     #audio-container p {
-        font-size: 12px;
+        font-size: 11px;
+        padding: 10px;
     }
 
     #footer {
