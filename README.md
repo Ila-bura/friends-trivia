@@ -12,11 +12,9 @@ The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-
   - [Table of Contents](#table-of-contents)
   - [UX](#ux)
     - [Site Purpose:](#site-purpose)
-    - [Site Goal](#site-goal)
     - [Audience](#audience)
     - [Communication:](#communication)
-    - [Current User Goals:](#current-user-goals)
-    - [New User Goals:](#new-user-goals)
+    - [User Goals:](#user-goals)
     - [Future Goals:](#future-goals)
   - [Design](#design)
     - [Wireframes](#wireframes)
@@ -53,17 +51,23 @@ The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-
 
 ### Site Purpose:
 
-### Site Goal
+The quiz is designed to challenge users with ten questions about the TV series Friends. Along with the final score, a message is displayed to congratulate the users or encourage them to take the quiz again to better their score.
 
 ### Audience
 
+Anyone who has watched a few episodes of the show and wants to test how much they remember about a few fun facts.
+
 ### Communication:
 
-### Current User Goals:
+The overall design was kept extremely simple on purpose: the user is encouraged to start the quiz as soon as they open the landing page. The visual structure of the quiz makes it intuitive to go through the ten questions. For each question, the user will be able to verify immediately if they got it right and if that is not the case, the correct answer is highlighted. At the end the user has the chance to try the quiz again.
 
-### New User Goals:
+### User Goals:
+
+Challenge the user to test their knowledge and find the correct answers to the quiz. If they wish to retake the quiz at the end to better theor score, a button is displayed to start the quiz again. Entertain the players with a short snippet of music playing the theme song.
 
 ### Future Goals:
+
+Add more questions to the quiz, possibly with different levels of difficulty to suit a broader audience. The user would also be more engaged to complete the quiz if a timer was displayed with limited amount to time to answer each question.
 
 ## Design
 
@@ -74,7 +78,7 @@ The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-
 
 ### Colour Scheme
 
-The font and background colours were chosen using the Chrome extension ColorZilla to match the shades of the background picture. The green and red shades of the correct and incorrect buttons were sourced from Coolors.
+The colours used for the design of this site were selected using the Chrome extension ColorZilla to match the exact shades of pink and light blue in the background picture. The green and red shades chosen for the buttons displaying the correct and incorrect answers were sourced from Coolors.
 
 ### Typography
 
@@ -105,9 +109,11 @@ The background image of New York by night was sourced from Pexels and the author
 
 #### Audio Player:
 
+The user has the option to play the theme song while they play. The embedded media player displays the controls so that the user can adjust the volume and stop the music at any time. It is worth noting that the music does not play authomatically and the loop option was avoided.
+
 #### Social Links:
 
-In the footer area the social media links of Facebook, YouTube and Instagram serve the purpose of giving users the chance to reach out and connect.
+In the footer area the social media links of Facebook, YouTube and Instagram serve the purpose of giving users the chance to potentially reach out and connect with the author of the site.
 
 ![Social Links](assets/images/images-readme/footer.png)
 
