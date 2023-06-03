@@ -101,7 +101,7 @@ The background image of New York by night was sourced from Pexels and the author
 
 #### Quiz Area:
 
-![Quiz area](assets/images/images-readme/game-area.png)
+![Quiz area](assets/images/images-readme/quiz-area.png)
 
 #### Final Score Screens:
 
@@ -111,11 +111,13 @@ The background image of New York by night was sourced from Pexels and the author
 
 The user has the option to play the theme song while they play. The embedded media player displays the controls so that the user can adjust the volume and stop the music at any time. It is worth noting that the music does not play authomatically and the loop option was avoided.
 
+![Media player](assets/images/images-readme/media-player.png)
+
 #### Social Links:
 
 In the footer area the social media links of Facebook, YouTube and Instagram serve the purpose of giving users the chance to potentially reach out and connect with the author of the site.
 
-![Social Links](assets/images/images-readme/footer.png)
+![Social Links](assets/images/images-readme/social-media.png)
 
 ### Features Left to Implement
 
@@ -133,6 +135,10 @@ In future iterations, some additional features could include giving the user the
 
 ![Jigsaw validator message](assets/images/images-readme/validator-css.png)
 
+A warning was displayed. After reasearching the matter on [StackOverflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error) it appears to be related to the use of Google fonts' link in the CSS file. It is my understanding that this is W3C validator informing that it is not going to validate Google's imported stylesheet. No errors or similar warnings are displayed in the console using Chrome developer tools, therefore no action was taken as the site is not affected at all by this warning.
+
+![Jigsaw validator warning](assets/images/images-readme/warning-css.png)
+
 - The JS file passed through [JSHint](https://jshint.com/) with no issues found.
 
 ![JSHint overview](assets/images/images-readme/validator-js.png)
@@ -141,7 +147,7 @@ In future iterations, some additional features could include giving the user the
 
 ![Accessibility score](assets/images/images-readme/lighthouse-score.png)
 
-- The site was tested in Chrome &nd Safari without issues.
+- The site was tested in Chrome and Safari without issues.
 - All links open to external pages as intended.
 
 ## Technologies Used
@@ -221,9 +227,11 @@ To clone the repository:
 
 ### Solved Bugs
 
+While writing the code to implement the Next button I came across the following error: ["TypeError: Cannot set properties of null"](https://bobbyhadz.com/blog/javascript-cannot-set-property-innerhtml-of-null). After researching the issue online, I identified the reason and fixed it: The Next button had a "btn-next" class instead of a "btn-next" id.
+
 ### Known Bugs
 
-- A warning message is displayed in the console on the live page when testing with Lighthouse. After researching the matter, the error appears to be related to teh fact that GitHub hosted pages disable Google's 3rd party cookie alternative FLoC, which then throws this error. The error doesn't affect the website in any way.
+- A warning message is displayed in the console on the live page when testing with Lighthouse. After researching the matter, the error appears to be related to the fact that GitHub hosted pages disable Google's third party cookie alternative FLoC, which throws this error. The error does not affect the website in any way.
 
   ![Console warning](assets/images/images-readme/console.warning.png)
 
@@ -235,12 +243,11 @@ To clone the repository:
 
 ### Code
 
-- The basic structure of the quiz code used was inspired by a [](https://)
--
-- A few tricks implemented in the code were inspired by the A. Grieves' Love Maths Walkthrough Project from Code institute.
+- The basic structure of the quiz code used was inspired by YouTube videos by [Easy Tutorials](https://www.youtube.com/watch?v=PBcqGxrr9g8) and [Web Dev Simplified](https://www.youtube.com/watch?v=riDzcEQbX6k)
+- A few tricks implemented in the code were inspired by A. Grieves' Love Maths Walkthrough Project from Code institute.
 
 ### Others
 
 - Some of the quiz questions were sourced from two online quizzes: [The Ultimate "Friends" Trivia Quiz](https://www.seventeen.com/celebrity/celeb-quizzes/a25048028/friends-quiz-trivia/) and [52 Question Ultimate Friends Trivia Quiz!](https://www.beano.com/posts/the-ultimate-friends-trivia-quiz)
-- The song played in the snippet is "I'll be There for you" by The Rembrandts. The YouTube video https://www.youtube.com/watch?v=s2TyVQGoCYo was converted into mp3 file using FreeConvert https://www.freeconvert.com/convert/video-to-mp3
+- The song played in the snippet is "I'll be There for you" by The Rembrandts. The [YouTube video](https://www.youtube.com/watch?v=s2TyVQGoCYo) was converted into mp3 file using FreeConvert.
 - Martina Terlevic: Code Institute Mentor.
