@@ -2,7 +2,7 @@
 
 Friends Trivia Quiz is an online game dedicated to Friends' fans and appreciators who would like to test their knowledge on the famous TV series.
 
-![Site view across devices](assets/images/images-readme/responsive-design.webp)
+![Site view across devices](assets/images/images-readme/responsive-design.png)
 
 The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-bura.github.io/friends-trivia/)
 
@@ -74,7 +74,8 @@ Add more questions to the quiz, possibly with different levels of difficulty to 
 
 ### Wireframes
 
-![Desktop wireframe](assets/images/images-readme/desktop-screen-wireframe.png)![Mobile wireframe](assets/images/images-readme/mobile-screen-wireframe.png)
+![Desktop wireframe](assets/images/images-readme/desktop-screen-wireframe.png)
+![Mobile wireframe](assets/images/images-readme/mobile-screen-wireframe.png)
 
 ### Colour Scheme
 
