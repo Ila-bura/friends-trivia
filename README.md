@@ -143,9 +143,10 @@ A warning was displayed. After reasearching the matter on [StackOverflow](https:
 
 ![JSHint overview](assets/images/images-readme/validator-js.png)
 
-- The page has an excellent Accessibility rating in Lighthouse
+- The page has an excellent Accessibility rating in Lighthouse for both Desktop and Device.
 
-![Accessibility score](assets/images/images-readme/lighthouse-score.png)
+![Accessibility score](assets/images/images-readme/lighthouse-score-desktop.png)
+![Accessibility score](assets/images/images-readme/lighthouse-score-mobile.png)
 
 - The site was tested in Chrome and Safari without issues.
 - All links open to external pages as intended.
@@ -231,7 +232,7 @@ While writing the code to implement the Next button I came across the following 
 
 ### Known Bugs
 
-- A warning message is displayed in the console on the live page when testing with Lighthouse. After researching the matter, the error appears to be related to the fact that GitHub hosted pages disable Google's third party cookie alternative FLoC, which throws this error. The error does not affect the website in any way.
+- A warning message is displayed in the console on the live page when testing with Lighthouse. After researching the matter on [StackOverflow](https://stackoverflow.com/questions/69619035/error-with-permissions-policy-header-unrecognized-feature-interest-cohort), the error appears to be related to the fact that GitHub hosted pages disable Google's third party cookie alternative FLoC, which throws this error. The error does not affect the website in any way.
 
   ![Console warning](assets/images/images-readme/console.warning.png)
 
