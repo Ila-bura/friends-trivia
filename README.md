@@ -4,7 +4,7 @@ Friends Trivia Quiz is an online game dedicated to Friends' fans and appreciator
 
 ![Site view across devices](assets/images/images-readme/responsive-design.png)
 
-The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-bura.github.io/friends-trivia/)
+The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-bura.github.io/friends-trivia-quiz/)
 
 ## Table of Contents
 
