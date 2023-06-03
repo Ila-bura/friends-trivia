@@ -267,7 +267,7 @@ h2 {
 
     #media-player {
         height: 40px;
-        padding: 10px;
+        padding: 15px;
     }
 
     #footer {
@@ -277,7 +277,7 @@ h2 {
 
     #audio-container p {
         font-size: 18px;
-        padding: 10px;
+        padding: 15px;
     }
 }
 
@@ -312,7 +312,7 @@ h2 {
 
     #media-player {
         height: 40px;
-        padding: 15px;
+        padding: 20px;
     }
 
     #footer {
@@ -321,7 +321,7 @@ h2 {
 
     #audio-container p {
         font-size: 16px;
-        padding: 15px;
+        padding: 10px;
     }
 }
 
@@ -356,6 +356,7 @@ h2 {
 
     #media-player {
         height: 40px;
+        padding: 15px;
     }
 
     #footer {
