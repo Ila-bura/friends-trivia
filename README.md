@@ -30,6 +30,7 @@ The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-
       - [Social Links](#social-links)
     - [Features Left to Implement](#features-left-to-implement)
   - [Testing](#testing)
+    - [Manual Testing](#manual-testing)
     - [Validator Testing](#validator-testing)
   - [Technologies Used](#technologies-used)
     - [Main Languages Used](#main-languages-used)
@@ -84,7 +85,7 @@ The colours used for the design of this site were selected using the Chrome exte
 
 The two fonts were sourced from the Google Fonts library:
 
-- Darumadrop One for the main heading and the "Next" button, as it vaguely reminds of the actual font of the Friends logo;
+- Darumadrop One for the main heading and the Next One button, as it vaguely reminds of the actual font of the Friends logo;
 - Permanent Marker for the body of the page.
 
 ### Imagery
@@ -101,11 +102,17 @@ The background image of New York by night was sourced from Pexels and the author
 
 #### Quiz Area
 
+There are three options to choose from for each question. Once the user clicks on one of them, the code prevents them from selecting any other option and at the same time, the correct answer will be highlighted in green. If the user picks an incorrect answer, the corresponding button will be highlighted in red.
+
 ![Quiz area](assets/images/images-readme/quiz-area.png)
 
 #### Final Score Screens
 
-![Ten out of Ten Screen](assets/images/images-readme/win-screen.png)
+Once the user has answered the last question, the final score is displayed. The user is also presented with three different messages, depending on their final score. This was achieved by writing a nested if/else statement.
+
+![Ten out of Ten Screen](assets/images/images-readme/max-score-screen.png)
+![Six to Nine Screen](assets/images/images-readme/medium-score-screen.png)
+![Zero to Five Screen](assets/images/images-readme/low-score-screen.png)
 
 #### Audio Player
 
@@ -124,6 +131,21 @@ In the footer area the social media links of Facebook, YouTube and Instagram ser
 In future iterations, some additional features could include giving the user the option to select multiple levels of difficulty and a timer to make the quiz more challenging.
 
 ## Testing
+
+### Manual Testing
+
+| Test                                                                                                                                                             | Expected                                                                                                                                                                                             | Outcome     |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------- |
+| Open landing page                                                                                                                                                | An event listener waits for the DOM to finish loading before running the quiz. The first question with three options are displayed.                                                                  | As Expected |
+| Select the correct answer                                                                                                                                        | The correct answer button turns green. The other two options are greyed out and cannot be selected. The Next One button is displayed.                                                                | As Expected |
+| Click on the Next One button                                                                                                                                     | The quiz area is cleared. Th subsequent question is displayed together with the three possible answers. The numbering of the question has increased by one. The Next One button is not displayed.    | As Expected |
+| Select an incorrect answer                                                                                                                                       | The selected incorrect answer turns red. The correct answer button turns green. The other option is greyed out and cannot be selected. The Next One button is displayed.                             | As Expected |
+| Select a random answer to the last question and click the Next One button                                                                                        | The quiz area is cleared. The final score is displayed as well as a short message commenting the result. The Next One button turns into a Try Again button                                           | As Expected |
+| Click on the Try Again button                                                                                                                                    | The landing page is loaded and the first question is displayed in the quiz area along with the three options.                                                                                        | As Expected |
+| Play the quiz from the top by selecting random answers one after the other until the last one                                                                    | The numbering of the questions systematically increases by one.                                                                                                                                      | As Expected |
+| Play the quiz from the top by selecting the ten correct answers one after the other until the last one then click the Next One button.                           | The quiz area is cleared. The final score displayed reads the following message You scored 10 out of 10! Oh.My.God.! The Next One button turns into a button that reads Once More!                   | As Expected |
+| Play the quiz from the top by selecting more than five correct answers (six, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message You scored 6 out of 10! Not too shabby! The Next One button turns into a button that reads Try again!                | As Expected |
+| Play the quiz from the top by selecting less than six correct answers (five, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message You scored 5 out of 10! Could this quiz BE any harder? The Next One button turns into a button that reads Try again! | As Expected |
 
 ### Validator Testing
 
@@ -228,7 +250,7 @@ To clone the repository:
 
 ### Solved Bugs
 
-While writing the code to implement the Next button I came across the following error: ["TypeError: Cannot set properties of null"](https://bobbyhadz.com/blog/javascript-cannot-set-property-innerhtml-of-null). After researching the issue online, I identified the reason and fixed it: The Next button had a "btn-next" class instead of a "btn-next" id.
+While writing the code to implement the Next One button I came across the following error: ["TypeError: Cannot set properties of null"](https://bobbyhadz.com/blog/javascript-cannot-set-property-innerhtml-of-null). After researching the issue online, I identified the reason and fixed it: The Next One button had a "btn-next" class instead of a "btn-next" id.
 
 ### Known Bugs
 
