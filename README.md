@@ -52,7 +52,7 @@ The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-
 
 ### Site Purpose
 
-The quiz is designed to challenge users with ten questions about the TV series Friends. Along with the final score, a message is displayed to congratulate the users or encourage them to take the quiz again to better their score.
+The quiz is designed to challenge users with ten questions about the TV series Friends. For each question, the user will be able to verify immediately if they got it right and if that is not the case, the correct answer is highlighted. Along with the final score, a message is displayed to congratulate the users or encourage them to take the quiz again to better their score.
 
 ### Audience
 
@@ -60,22 +60,21 @@ Anyone who has watched a few episodes of the show and wants to test how much the
 
 ### Communication
 
-The overall design was kept extremely simple on purpose: the user is encouraged to start the quiz as soon as they open the landing page. The visual structure of the quiz makes it intuitive to go through the ten questions. For each question, the user will be able to verify immediately if they got it right and if that is not the case, the correct answer is highlighted. At the end the user has the chance to try the quiz again.
+The overall design was kept extremely simple on purpose: the user is encouraged to start the quiz as soon as they open the landing page. The visual structure of the quiz makes it intuitive to go through the ten questions.
 
 ### User Goals
 
-Challenge the user to test their knowledge and find the correct answers to the quiz. If they wish to retake the quiz at the end to better theor score, a button is displayed to start the quiz again. Entertain the players with a short snippet of music playing the theme song.
+Challenge the user to test their knowledge and find the correct answers to the quiz. Entertain the players with a short snippet of music playing the theme song. If they wish to retake the quiz at the end to better their score, a button is displayed to start the quiz again.
 
 ### Future Goals
 
-Add more questions to the quiz, possibly with different levels of difficulty to suit a broader audience. The user would also be more engaged to complete the quiz if a timer was displayed with limited amount to time to answer each question.
+Add more questions to the quiz, possibly with different levels of difficulty to suit a broader audience. The user would also be more engaged to complete the quiz if a timer was displayed with limited amount of time to answer each question.
 
 ## Design
 
 ### Wireframes
 
-![Desktop wireframe](assets/images/images-readme/desktop-screen-wireframe.png)
-![Mobile wireframe](assets/images/images-readme/mobile-screen-wireframe.png)
+![Desktop wireframe](assets/images/images-readme/desktop-screen-wireframe.png)![Mobile wireframe](assets/images/images-readme/mobile-screen-wireframe.png)
 
 ### Colour Scheme
 
@@ -90,7 +89,7 @@ The two fonts were sourced from the Google Fonts library:
 
 ### Imagery
 
-The background image of New York by night was sourced from Pexels and the author is ![Chris Schippers](https://www.pexels.com/photo/body-of-water-near-city-buildings-421927/).
+The background image of New York by night was sourced from Pexels and the author is ![Chris Schippers](https://www.pexels.com/photo/body-of-water-near-city-buildings-421927/)
 
 ## Features
 
@@ -122,7 +121,7 @@ The user has the option to play the theme song while they play. The embedded med
 
 #### Social Links
 
-In the footer area the social media links of Facebook, YouTube and Instagram serve the purpose of giving users the chance to potentially reach out and connect with the author of the site.
+In the footer area the social media links of Facebook, YouTube and Instagram serve the purpose of giving the user the chance to potentially reach out and connect with the author of the site.
 
 ![Social Links](assets/images/images-readme/social-media.png)
 
@@ -134,18 +133,18 @@ In future iterations, some additional features could include giving the user the
 
 ### Manual Testing
 
-| Test                                                                                                                                                             | Expected                                                                                                                                                                                             | Outcome     |
-| :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------- |
-| Open landing page                                                                                                                                                | An event listener waits for the DOM to finish loading before running the quiz. The first question with three options are displayed.                                                                  | As Expected |
-| Select the correct answer                                                                                                                                        | The correct answer button turns green. The other two options are greyed out and cannot be selected. The Next One button is displayed.                                                                | As Expected |
-| Click on the Next One button                                                                                                                                     | The quiz area is cleared. Th subsequent question is displayed together with the three possible answers. The numbering of the question has increased by one. The Next One button is not displayed.    | As Expected |
-| Select an incorrect answer                                                                                                                                       | The selected incorrect answer turns red. The correct answer button turns green. The other option is greyed out and cannot be selected. The Next One button is displayed.                             | As Expected |
-| Select a random answer to the last question and click the Next One button                                                                                        | The quiz area is cleared. The final score is displayed as well as a short message commenting the result. The Next One button turns into a Try Again button                                           | As Expected |
-| Click on the Try Again button                                                                                                                                    | The landing page is loaded and the first question is displayed in the quiz area along with the three options.                                                                                        | As Expected |
-| Play the quiz from the top by selecting random answers one after the other until the last one                                                                    | The numbering of the questions systematically increases by one.                                                                                                                                      | As Expected |
-| Play the quiz from the top by selecting the ten correct answers one after the other until the last one then click the Next One button.                           | The quiz area is cleared. The final score displayed reads the following message You scored 10 out of 10! Oh.My.God.! The Next One button turns into a button that reads Once More!                   | As Expected |
-| Play the quiz from the top by selecting more than five correct answers (six, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message You scored 6 out of 10! Not too shabby! The Next One button turns into a button that reads Try again!                | As Expected |
-| Play the quiz from the top by selecting less than six correct answers (five, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message You scored 5 out of 10! Could this quiz BE any harder? The Next One button turns into a button that reads Try again! | As Expected |
+| Test                                                                                                                                                             | Expected                                                                                                                                                                                                   | Outcome     |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------- |
+| Open landing page                                                                                                                                                | An event listener waits for the DOM to finish loading before running the quiz. The first question and three options are displayed.                                                                         | As Expected |
+| Select the correct answer                                                                                                                                        | The correct answer button turns green. The other two options are greyed out and cannot be selected. The Next One button is displayed.                                                                      | As Expected |
+| Click on the Next One button                                                                                                                                     | The quiz area is cleared. The subsequent question is displayed together with the three possible answers. The numbering of the questions has increased by one. The Next One button is not displayed.        | As Expected |
+| Select an incorrect answer                                                                                                                                       | The selected incorrect answer turns red. The correct answer button turns green. The other option is greyed out and cannot be selected. The Next One button is displayed.                                   | As Expected |
+| Select a random answer to the last question and click the Next One button.                                                                                       | The quiz area is cleared. The final score is displayed as well as a short message commenting the result. The Next One button turns into a button nudging the user to try the quiz again.                   | As Expected |
+| Click on the Try Again button                                                                                                                                    | The landing page is loaded and the first question is displayed in the quiz area along with the three options.                                                                                              | As Expected |
+| Play the quiz from the top by selecting random answers one after the other until the last one.                                                                   | The numbering of the questions systematically increases by one.                                                                                                                                            | As Expected |
+| Play the quiz from the top by selecting the ten correct answers one after the other until the last one then click the Next One button.                           | The quiz area is cleared. The final score displayed reads the following message: "You scored 10 out of 10! Oh.My.God.!". The Next One button turns into a button that reads "Once More!"                   | As Expected |
+| Play the quiz from the top by selecting more than five correct answers (six, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message: "You scored 6 out of 10! Not too shabby!". The Next One button turns into a button that reads "Try again!".               | As Expected |
+| Play the quiz from the top by selecting less than six correct answers (five, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message: "You scored 5 out of 10! Could this quiz BE any harder?". The Next One button turns into a button that reads "Try again!" | As Expected |
 
 ### Validator Testing
 
@@ -155,9 +154,9 @@ In future iterations, some additional features could include giving the user the
 
 - The CSS file passed through the [Jigsaw validator](https://jigsaw.w3.org/css-validator/) with no issues found.
 
-![Jigsaw validator message](assets/images/images-readme/validator-css.png)
+![Jigsaw validator message](assets/images/images-readme/css-validator.png)
 
-A warning was displayed. After reasearching the matter on [StackOverflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error) it appears to be related to the use of Google fonts' link in the CSS file. It is my understanding that this is W3C validator informing that it is not going to validate Google's imported stylesheet. No errors or similar warnings are displayed in the console using Chrome developer tools, therefore no action was taken as the site is not affected at all by this warning.
+A warning was displayed. After reasearching the matter on [StackOverflow](https://stackoverflow.com/questions/25946111/importing-css-is-ending-up-with-an-error) it appears to be related to the use of Google Fonts import link in the CSS file. It is my understanding that this is W3C validator informing that it is not going to validate Google's imported stylesheet. No errors or similar warnings are displayed in the console using Chrome developer tools, therefore no action was taken as the site is not affected at all by this warning.
 
 ![Jigsaw validator warning](assets/images/images-readme/warning-css.png)
 
@@ -262,7 +261,7 @@ While writing the code to implement the Next One button I came across the follow
 
 ### Images
 
-- The background image of New York by night was sourced from Pexels and the author is ![Chris Schippers](https://www.pexels.com/photo/body-of-water-near-city-buildings-421927/).
+- The background image of New York by night was sourced from Pexels and the author is ![Chris Schippers](https://www.pexels.com/photo/body-of-water-near-city-buildings-421927/)
 
 ### Code
 
@@ -273,4 +272,4 @@ While writing the code to implement the Next One button I came across the follow
 
 - Some of the quiz questions were sourced from two online quizzes: [The Ultimate "Friends" Trivia Quiz](https://www.seventeen.com/celebrity/celeb-quizzes/a25048028/friends-quiz-trivia/) and [52 Question Ultimate Friends Trivia Quiz!](https://www.beano.com/posts/the-ultimate-friends-trivia-quiz)
 - The song played in the snippet is "I'll be There for you" by The Rembrandts. The [YouTube video](https://www.youtube.com/watch?v=s2TyVQGoCYo) was converted into mp3 file using FreeConvert.
-- A special acknowledgment to my Code Institute mentor, Martina Terlevic for the support and encouragement.
+- A special acknowledgment to my mentor, Martina Terlevic, for the support and encouragement.
