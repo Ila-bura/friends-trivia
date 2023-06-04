@@ -130,7 +130,8 @@ In the footer area, the icons of Facebook, YouTube and Instagram are clickable a
 
 #### 404 Page
 
-A 404.html page notifies the user with the following message:"Oops! Nothing to see here! Go back to the homepage". The word "homepage" is clickable and rediirects the user to the main page of the Friends Trivia Quiz.
+A 404.html page notifies the user with the following message:"Oops! Nothing to see here! Go back to the homepage".
+The word "homepage" is clickable and redirects the user to the main page of the Friends Trivia Quiz.
 
 ### Features Left to Implement
 
