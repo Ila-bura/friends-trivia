@@ -137,7 +137,7 @@ In future iterations, some additional features could include giving the user the
 
 | Test                                                                                                                                                             | Expected                                                                                                                                                                                                   | Outcome     |
 | :--------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------- |
-| Open landing page.                                                                                                                                               | An event listener waits for the DOM to finish loading before running the quiz. The first question and three options are displayed.                                                                         | As Expected |
+| Open landing page.                                                                                                                                               | An event listener waits for the DOM to finish loading before running the quiz. The first question and three options are displayed. The theme song does not start playing.                                  | As Expected |
 | Select the correct answer.                                                                                                                                       | The correct answer button turns green. The other two options are greyed out and cannot be selected. The Next One button is displayed.                                                                      | As Expected |
 | Click on the Next One button.                                                                                                                                    | The quiz area is cleared. The subsequent question is displayed together with the three possible answers. The numbering of the questions increases by one. The Next One button is not displayed.            | As Expected |
 | Select an incorrect answer.                                                                                                                                      | The selected incorrect answer turns red. The correct answer button turns green. The other option is greyed out and cannot be selected. The Next One button is displayed.                                   | As Expected |
@@ -147,6 +147,8 @@ In future iterations, some additional features could include giving the user the
 | Play the quiz from the top by selecting the ten correct answers one after the other until the last one then click the Next One button.                           | The quiz area is cleared. The final score displayed reads the following message: "You scored 10 out of 10! Oh.My.God.!". The Next One button turns into a button that reads "Once More!"                   | As Expected |
 | Play the quiz from the top by selecting more than five correct answers (six, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message: "You scored 6 out of 10! Not too shabby!". The Next One button turns into a button that reads "Try again!".               | As Expected |
 | Play the quiz from the top by selecting less than six correct answers (five, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message: "You scored 5 out of 10! Could this quiz BE any harder?". The Next One button turns into a button that reads "Try again!" | As Expected |
+| Click the play button in the audio snippet. Adjust the volume. Pause the music.                                                                                  | The theme song starts playing. The volume can be adjusted. The music can be paused.                                                                                                                        | As Expected |
+| Click the play button in the audio snippet and let it play until the end (54 seconds).                                                                           | The theme song does not replay in loop at the end of the 54 seconds.                                                                                                                                       | As Expected |
 
 ### Validator Testing
 
@@ -261,7 +263,7 @@ To clone the repository:
 
 ### Images
 
-- The background image of New York by night was sourced from [Pexels](https://www.pexels.com/) and the author is [Chris Schippers](https://www.pexels.com/photo/body-of-water-near-city-buildings-421927/).
+- The background image of New York by night was sourced from Pexels and the author is [Chris Schippers](https://www.pexels.com/photo/body-of-water-near-city-buildings-421927/).
 
 ### Code
 
