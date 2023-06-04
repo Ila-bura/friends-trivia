@@ -28,6 +28,7 @@ The Friends Trivia Quiz site is live, the links can be found [HERE](https://ila-
       - [Final Score Screens](#final-score-screens)
       - [Audio Player](#audio-player)
       - [Social Links](#social-links)
+      - [404 Page](#404-page)
     - [Features Left to Implement](#features-left-to-implement)
   - [Testing](#testing)
     - [Manual Testing](#manual-testing)
@@ -127,6 +128,10 @@ In the footer area, the icons of Facebook, YouTube and Instagram are clickable a
 
 ![Social Links](assets/images/images-readme/social-media.png)
 
+#### 404 Page
+
+A 404.html page notifies the user with the following message:"Oops! Nothing to see here! Go back to the homepage". The word "homepage" is clickable and rediirects the user to the main page of the Friends Trivia Quiz.
+
 ### Features Left to Implement
 
 In future iterations, some additional features could include giving the user the option to select multiple levels of difficulty and a timer to make the quiz more challenging.
@@ -147,8 +152,8 @@ In future iterations, some additional features could include giving the user the
 | Play the quiz from the top by selecting the ten correct answers one after the other until the last one then click the Next One button.                           | The quiz area is cleared. The final score displayed reads the following message: "You scored 10 out of 10! Oh.My.God.!". The Next One button turns into a button that reads "Once More!"                   | As Expected |
 | Play the quiz from the top by selecting more than five correct answers (six, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message: "You scored 6 out of 10! Not too shabby!". The Next One button turns into a button that reads "Try again!".               | As Expected |
 | Play the quiz from the top by selecting less than six correct answers (five, for example) one after the other until the last one then click the Next One button. | The quiz area is cleared. The final score displayed reads the following message: "You scored 5 out of 10! Could this quiz BE any harder?". The Next One button turns into a button that reads "Try again!" | As Expected |
-| Click the play button in the audio snippet. Adjust the volume. Pause the music.                                                                                  | The theme song starts playing. The volume can be adjusted. The music can be paused.                                                                                                                        | As Expected |
-| Click the play button in the audio snippet and let it play until the end (54 seconds).                                                                           | The theme song does not replay in loop at the end of the 54 seconds.                                                                                                                                       | As Expected |
+| Click the play button in the audio player. Adjust the volume. Pause the music.                                                                                   | The theme song starts playing. The volume can be adjusted. The music can be paused.                                                                                                                        | As Expected |
+| Click the play button in the audio player and let it play until the end (54 seconds).                                                                            | The theme song does not replay in loop at the end of the 54 seconds.                                                                                                                                       | As Expected |
 
 ### Validator Testing
 
