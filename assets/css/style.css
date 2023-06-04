@@ -1,3 +1,5 @@
+/* --------- google fonts link */
+
 @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Permanent+Marker&display=swap');
 
 /* --------- overall app style */
@@ -24,7 +26,6 @@ body {
 }
 
 /* --------- main heading */
-
 .game-title {
     color: #F3C5DF;
     font-family: 'Permanent Marker', cursive;
@@ -242,7 +243,6 @@ h2 {
 /* For medium screen sizes from 540px */
 
 @media (max-width: 540px) {
-
     .game-title {
         font-size: 30px;
     }
@@ -327,7 +327,6 @@ h2 {
 
 /* For smaller screen sizes from 280px wide and down */
 @media (max-width: 280px) {
-
     .game-title {
         font-size: 24px;
         padding: 25px;

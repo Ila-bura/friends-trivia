@@ -102,7 +102,7 @@ const questionElement = document.getElementById("question");
 // Variable for the answer
 const answerButtons = document.getElementById("answer-buttons");
 
-// Variable for the next button
+// Variable for the Next One button
 const nextButton = document.getElementById("btn-next");
 
 // Variable to store the score index and initial score
@@ -151,7 +151,7 @@ function displayQuestion() {
 /** 
  * Function to register the option clicked by the user and check if answer is correct; 
  * automatically highlight the correct answer; 
- * display the "Next" button; 
+ * display the Next One button; 
  * prevent the user from selecting another option once one answer is selected;
  * increase score by one
 */
@@ -175,7 +175,7 @@ function pickAnswer(e) {
 }
 
 /** 
- * Function for the "Next" button to be clickable and update the index; 
+ * Function for the Next One button to be clickable and update the index; 
  * display the subsequent question until the last one;
  * after the tenth question, display the score
 */
@@ -189,7 +189,7 @@ function handleNextButton() {
     }
 }
 
-// Event listener with click event for the "Next" button; 
+// Event listener with click event for the Next One button; 
 
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
