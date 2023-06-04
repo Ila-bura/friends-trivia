@@ -89,7 +89,7 @@ The two fonts were sourced from the Google Fonts library:
 
 ### Imagery
 
-The background image of New York by night was sourced from Pexels and the author is ![Chris Schippers](https://www.pexels.com/@chris-schippers-139261/)
+The background image of New York by night was sourced from Pexels and the author is [Chris Schippers](https://www.pexels.com/photo/body-of-water-near-city-buildings-421927/).
 
 ## Features
 
@@ -102,7 +102,8 @@ The background image of New York by night was sourced from Pexels and the author
 #### Quiz Area
 
 For each question there are three options to choose from. Once the user clicks on one of them, the code prevents them from selecting any other option and at the same time, the correct answer is highlighted in green. If the user picks an incorrect answer, the corresponding button is highlighted in red.
-As soon as the user selects an answer, a button appears to let the user move on to the next question. There are ten questions in the quiz: some were sourced and adapted from two online quizzes - See [Others](#others) section for more details. Some other questions and answers were written from scratch by the author.
+As soon as the user selects an answer, a button appears to let the user move on to the next question.
+There are ten questions in the quiz: some questions and answers were written from scratch by the author, while others were sourced and adapted from two online quizzes. See [Others](#others) section for more details.
 
 ![Quiz area](assets/images/images-readme/quiz-area.png)
 
@@ -260,7 +261,7 @@ To clone the repository:
 
 ### Images
 
-- The background image of New York by night was sourced from Pexels and the author is ![Chris Schippers](https://www.pexels.com/@chris-schippers-139261/)
+- The background image of New York by night was sourced from [Pexels](https://www.pexels.com/) and the author is [Chris Schippers](https://www.pexels.com/photo/body-of-water-near-city-buildings-421927/).
 
 ### Code
 
